@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Followers Exporter",
+  "version": "1.0",
+  "description": "Exporta seguidores de Instagram",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://*.cdninstagram.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/instagram.png",
+      "48": "images/instagram.png",
+      "128": "images/instagram.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; connect-src 'self' https://*.cdninstagram.com; script-src 'self'; style-src 'self'; object-src 'none'; img-src 'self' https://*.cdninstagram.com data:"
+  },
+  "web_accessible_resources": [{
+    "resources": ["exceljs.js", "xlsx.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "16": "images/instagram.png",
+    "48": "images/instagram.png", 
+    "128": "images/instagram.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

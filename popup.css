@@ -1,0 +1,74 @@
+body {
+  width: 300px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0081d6;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+label {
+  font-size: 14px;
+  color: #262626;
+}
+
+#status {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#status.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+#status.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+#status.warning {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}

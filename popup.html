@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Followers Exporter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="button-group">
+      <button id="goToInstagram">Ir a Instagram</button>
+      <button id="openFollowersList">Abrir Seguidores</button>
+    </div>
+
+    <div>
+      <label for="exportType">Tipo de Archivo:</label>
+      <select id="exportType">
+        <option value="excel">Excel</option>
+        <option value="csv">CSV</option>
+      </select>
+    </div>
+
+    <button id="exportFollowers">Exportar Seguidores</button>
+
+    <div id="status"></div>
+  </div>
+  
+  <script src="exceljs.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
