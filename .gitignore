@@ -1,0 +1,108 @@
+# Entornos de desarrollo y Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+logs/
+log/
+
+# Archivos de configuración local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de dependencias
+node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de backup
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# Archivos de configuración específicos
+.pylintrc
+.flake8
+.mypy_cache/
+.pytest_cache/
+
+# Archivos de datos sensibles
+*.key
+*.pem
+*.cert
+
+# Archivos de compilación
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+
+# Archivos de proyecto específicos de Instagram
+instagram_credentials.json
+followers_data.csv
+followers_export.json
+
+# Archivos de caché
+.cache/
+.pytest_cache/
+.hypothesis/
+
+# Documentación generada
+docs/_build/
+
+# Archivos de configuración de entorno específicos
+.python-version
+.conda/
